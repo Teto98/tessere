@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleria Fotografica</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        @media only screen and (min-width: 768px) {
+            .gallery img {
+                width: 48%;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .gallery img {
+                width: 31%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tessere</h1>
+    </header>
+
+    <div class="gallery">
+        <img src="img/img (1).jpeg" alt="Foto 1">
+        <img src="img/img (2).jpeg" alt="Foto 2">
+        <img src="img/img (3).jpeg" alt="Foto 3">
+        <img src="img/img (4).jpeg" alt="Foto 3">
+        <!-- Aggiungi altre immagini secondo necessità -->
+    </div>
+</body>
+</html>
